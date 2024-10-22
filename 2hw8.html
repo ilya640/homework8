@@ -34,7 +34,10 @@
         .content{
             padding: 10px;
             margin: 0 0 0 250px;
-            background-color: white;
+            
+            background: url('./ball.jpg') repeat-y white;
+            background-position: right;
+            
             
           
             min-height: calc(100vh - 110px);
@@ -65,6 +68,12 @@
             font-size: 20px;
             text-align: center;
         }
+        .type-sport{
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 20px;
+            
+        }
     </style>
 </head>
 <body>
@@ -74,8 +83,8 @@
     </header>
     <div class="colums">
     <div class="menu">
+        <p class="type-sport">Виды спорта:</p>
         <ul>
-            Виды спорта:
             <li><a href="#">конькобежный спорт</a></li>
             <li><a href="#">биатлон</a></li>
             <li><a href="#">футбол</a></li>
