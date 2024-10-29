@@ -5,122 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body,html{
+        body, html {
             margin: 0;
             padding: 0;
             background-color: aqua;  
             height: 100%;
         }
-        .menu{
+        .menu {
             height: calc(100vh - 110px);
             float: left;
             width: 250px;
         }
-        ul{
+        ul {
             font-weight: bold;
         }
-        li{
+        li {
             font-weight: normal;
         }
-        header{
+        header, footer {
             height: 40px;
             color: blue;
             font-weight: bold;
-            display: flex;            
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            line-height: 40px; /* Vertically center the text */
         }
-        .content{
+        .content {
             padding: 10px;
-            margin: 0 0 0 250px;
-            
+            margin-left: 250px; /* Leave space for the menu */
             background: url('./ball.jpg') repeat-y white;
             background-position: right;
-            
-            
-          
             min-height: calc(100vh - 110px);
-            
         }
-        footer{
-            height: 50px;       
-            color: blue;
-            font-weight: bold;
-            display: flex;            
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .image{
+        .image {
             float: left;
             margin: 10px;
         }
-        .clear{
+        .clear {
             clear: both;
         }
-        .colums{
+        .columns {
             background-color: rgb(246, 246, 162);
             min-height: calc(100vh - 110px);
         }
-        h1{
+        h1 {
             font-size: 20px;
             text-align: center;
         }
-        .type-sport{
-           
+        .type-sport {
             font-weight: bold;
             font-size: 20px;
             padding-left: 20px;
-            
         }
-        
-        
     </style>
 </head>
 <body>
     <header>
         ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
-        
     </header>
-    <div class="colums">
-    <div class="menu">
-        <p class="type-sport">Виды спорта:</p>
-        <ul>
-            <li><a href="#">конькобежный спорт</a></li>
-            <li><a href="#">биатлон</a></li>
-            <li><a href="#">футбол</a></li>
-            <li><a href="#">стрельба из лука</a></li>
-            <li><a href="#">прыжки в длину</a></li>
-            <li><a href="#">прыжки в высоту</a></li>
-        </ul>
+    <div class="columns">
+        <div class="menu">
+            <p class="type-sport">Виды спорта:</p>
+            <ul>
+                <li><a href="#">конькобежный спорт</a></li>
+                <li><a href="#">биатлон</a></li>
+                <li><a href="#">футбол</a></li>
+                <li><a href="#">стрельба из лука</a></li>
+                <li><a href="#">прыжки в длину</a></li>
+                <li><a href="#">прыжки в высоту</a></li>
+            </ul>
+        </div>
         
+        <div class="content">
+            <h1>ФУТБОЛ</h1>
+            <img src="football.png" alt="football" class="image">
+            
+            <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота
+            соперника ногами или другими частями тела (кроме рук) большее количество раз,
+            чем команда соперника.</p>
+            
+            <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок
+            и руководящих принципов. Эти правила предназначены для применения на всех 
+            уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, 
+            взрослые, женщины и люди с ограниченными физическими возможностями. Законы 
+            очень часто формулировались в общих чертах, которые позволяют упростить их 
+            применения в зависимости от характера игры.</p>
+        </div>
     </div>
     
- <div class="content">
-    <h1> ФУТБОЛ</h1>
-    <img src="football.png" alt="football" class="image">
-    
-    <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота
-     соперника ногами или другими частями тела (кроме рук) большее количество раз,
-      чем команда соперника.
-    
-    Есть 17 официальных правил игры, каждое из которых содержит список оговорок
-     и руководящих принципов. Эти правила предназначены для применения на всех 
-     уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, 
-     взрослые, женщины и люди с ограниченными физическими возможностями. Законы 
-     очень часто формулировались в общих чертах, которые позволяют упростить их 
-     применения в зависимости от характера игры.
-     
-    </p>
-    
-</div>
-    
-</div>
-
-
-
-<footer>
-    ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
-</footer>
+    <footer>
+        ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
+    </footer>
 </body>
 </html>
